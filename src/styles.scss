@@ -1,0 +1,137 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+* {
+    margin: 0;
+    padding: 0;
+  }
+  * {
+    outline: none;
+  p
+    &:focus {
+      outline: none;
+    }
+    button {
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  body {
+    margin: 0;
+    background: #fff;
+    //color: var(--text-primary);
+    font-family: 'Inter', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+    overflow: auto;
+  }
+  pre, xmp, plaintext, listing {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  html,
+  body {
+   height: 100%;
+   position: relative;
+  }
+  /**
+   * Clear inner floats
+   */
+  .clearfix:before,
+  .clearfix:after {
+    content: " ";
+    display: table;
+  }
+  .clearfix:after{
+    clear: both;
+  }
+  .clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+  }
+  .clearfix {
+    zoom: 1;
+  }
+  
+  a {
+    cursor: pointer;
+    //color: $primary-color;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+  }
+  /**
+   * Webkit Scroll Bar
+   */
+  ::-webkit-scrollbar {
+    width: 4px;
+    background-color: transparent !important;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent !important;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #c6712a;
+    border-radius: 10px;
+  }
+  //accordation
+  .accordion-wrap {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .btn-primary:after {
+    content: '-';
+    float: right;
+    font-size: 25px;
+    color: #fff;
+  }
+  .btn-primary.collapsed:after {
+    content: '+';
+    float: right;
+    font-size: 25px;
+    color: #fff;
+  }
+
+  .btn-primary, .btn-primary:active, .btn-primary:visited, .btn-primary:focus,.btn-primary:hover {
+    background-color: #ffb40b;
+    border-color: #ffb40b;
+    box-shadow: 0 0 0 0.2rem rgba(255, 222, 38, 0.5);
+  }
+  .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+    color: #fff;
+    background-color: #ffb40b;
+    border-color: #ffb40b; 
+    box-shadow: 0 0 0 0.2rem rgba(255, 222, 38, 0.5);
+  }
+  .btn-primary:not(:disabled):not(.disabled):active:focus{
+    box-shadow: 0 0 0 0.2rem rgba(255, 222, 38, 0.5); 
+  }
+  .accordion-btn{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
